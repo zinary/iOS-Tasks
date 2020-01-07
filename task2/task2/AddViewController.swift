@@ -24,27 +24,32 @@ class AddViewController: UIViewController,UITextFieldDelegate {
 //          return x
 //    }
     
-    
+    func invalidAge(customMessage:String){
+        let alertController = UIAlertController(title: "Alert", message: customMessage, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Close", style: .cancel , handler: nil )
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
     @IBAction func saveButton(_ sender: Any) {
         
         if nameText.text! != ""  && ageText.text! != ""  && genderText.text! != ""{
-            let x : Int?
-            x = Int((ageText?.text!)!)
-            if x != nil  {
+//            let x : Int?
+//            x = Int((ageText?.text!)!)
+//            if x != nil  {
+            guard let ageCheck = Int(ageText.text!) else{
+                invalidAge(customMessage: "Enter Valid age")
+                return
                 
-                delegate?.addTask(name: nameText.text!, age: x! , gender: genderText.text!)
+            }
+            if ageCheck <= 100 && ageCheck >= 6{
+                    delegate?.addTask(name: nameText.text!, age: Int(ageCheck) , gender: genderText.text!)
                 navigationController?.popViewController(animated: true)
-              
             }
-           else {
-                let alertController = UIAlertController(title: "Alert", message: "Enter valid age", preferredStyle: .alert)
-                let alertAction = UIAlertAction(title: "Close", style: .cancel , handler: nil )
-                alertController.addAction(alertAction)
-                present(alertController, animated: true, completion: nil)
-
+            else {
+             invalidAge(customMessage: "Age must be greater than 6 and less than 100")
             }
-       
-        }
+            }
+        
         else {
             let alertController = UIAlertController(title: "Alert", message: "Enter all the Details to save", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Close", style: .cancel, handler: nil )
