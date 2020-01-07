@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sample2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-ds-0R9">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="TJo-Si-Nxh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TT2-Um-wU0">
+                                <rect key="frame" x="0.0" y="616.5" width="414" height="245.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-Gi-Jci">
+                                        <rect key="frame" x="20" y="10" width="374" height="135.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.018033454754601226" alpha="0.82466209739263807" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UUS-Gi-Jci" secondAttribute="bottom" constant="100" id="FUF-52-61F"/>
+                                    <constraint firstItem="UUS-Gi-Jci" firstAttribute="top" secondItem="TT2-Um-wU0" secondAttribute="top" constant="10" id="UXF-Ue-dW4"/>
+                                    <constraint firstItem="UUS-Gi-Jci" firstAttribute="leading" secondItem="TT2-Um-wU0" secondAttribute="leading" constant="20" id="iVL-wX-74d"/>
+                                    <constraint firstAttribute="trailing" secondItem="UUS-Gi-Jci" secondAttribute="trailing" constant="20" id="uOG-HU-17I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sth-ds-0R9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9wh-Im-nuD"/>
+                            <constraint firstItem="Sth-ds-0R9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bX2-r8-YMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TT2-Um-wU0" secondAttribute="trailing" id="g0p-dv-zOn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Sth-ds-0R9" secondAttribute="bottom" id="gO8-ze-Z6q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sth-ds-0R9" secondAttribute="trailing" id="lud-V3-LC7"/>
+                            <constraint firstItem="TT2-Um-wU0" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="vKV-X0-8x6"/>
+                            <constraint firstItem="TT2-Um-wU0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wuF-PZ-nze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TT2-Um-wU0" secondAttribute="bottom" id="yTs-bf-WF3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2005" height="1085"/>
+    </resources>
+</document>

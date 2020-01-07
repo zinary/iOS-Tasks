@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sample1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="rph-EM-fdC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIQ-UB-t7e" userLabel="FirstButton">
+                                <rect key="frame" x="45" y="299" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-lK-uaJ" userLabel="SecondButton">
+                                <rect key="frame" x="45" y="378" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login with Google" backgroundImage="Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-yy-0RH" userLabel="ThirdButton">
+                                <rect key="frame" x="45" y="457" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login with Email" backgroundImage="Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-Wk-UsX">
+                                <rect key="frame" x="121" y="248" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63S-Eg-THe">
+                                <rect key="frame" x="127" y="182" width="121" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HIQ-UB-t7e" firstAttribute="top" secondItem="aR4-Wk-UsX" secondAttribute="bottom" constant="30" id="1em-2C-d8R"/>
+                            <constraint firstItem="FrC-lK-uaJ" firstAttribute="top" secondItem="HIQ-UB-t7e" secondAttribute="bottom" constant="10" id="5tC-UX-aHS"/>
+                            <constraint firstItem="aR4-Wk-UsX" firstAttribute="top" secondItem="63S-Eg-THe" secondAttribute="bottom" constant="30" id="5u6-Lu-ejF"/>
+                            <constraint firstItem="rph-EM-fdC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6c8-cO-ghu"/>
+                            <constraint firstItem="IP7-yy-0RH" firstAttribute="top" secondItem="FrC-lK-uaJ" secondAttribute="bottom" constant="10" id="CZM-Lg-aIi"/>
+                            <constraint firstItem="63S-Eg-THe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ERb-G1-hmh"/>
+                            <constraint firstItem="HIQ-UB-t7e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MP3-gy-e8Z"/>
+                            <constraint firstItem="IP7-yy-0RH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ush-Ih-L5w"/>
+                            <constraint firstItem="FrC-lK-uaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cfy-qY-r3J"/>
+                            <constraint firstAttribute="bottom" secondItem="rph-EM-fdC" secondAttribute="bottom" id="iqh-ft-va5"/>
+                            <constraint firstAttribute="trailing" secondItem="rph-EM-fdC" secondAttribute="trailing" id="oaW-kG-xiw"/>
+                            <constraint firstItem="rph-EM-fdC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qR5-13-qcW"/>
+                            <constraint firstItem="aR4-Wk-UsX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNE-y6-tWS"/>
+                            <constraint firstItem="HIQ-UB-t7e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQs-Ry-rJ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
