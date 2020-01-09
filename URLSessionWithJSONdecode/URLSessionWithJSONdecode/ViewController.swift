@@ -59,10 +59,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         cell.regionLabel.text = FinalData[indexPath.row].region
         cell.timeZoneLabel.text = FinalData[indexPath.row].timezones[0]
         cell.nativeNameLabel.text = FinalData[indexPath.row].nativeName
-        let v = self.FinalData.count
-        print(v)
-        
-        
         return cell
         
     }
