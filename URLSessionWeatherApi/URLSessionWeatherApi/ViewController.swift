@@ -49,9 +49,6 @@ class ViewController: UIViewController {
             }
                 
             }.resume()
-            
-            
-            
         }
         
     }
