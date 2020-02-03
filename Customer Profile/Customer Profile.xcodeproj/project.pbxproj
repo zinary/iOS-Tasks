@@ -62,10 +62,10 @@
 			children = (
 				F5BC54CF23DEE91300F24CA9 /* AppDelegate.swift */,
 				F5ABA99723E071CC00EA92C3 /* SQLite.swift */,
-				F5BC54D123DEE91300F24CA9 /* ViewController.swift */,
 				F5FF0C4F23E0671000E7E854 /* CustomerModel.swift */,
-				F5BC54D323DEE91300F24CA9 /* Main.storyboard */,
+				F5BC54D123DEE91300F24CA9 /* ViewController.swift */,
 				F5BC54D923DEE91400F24CA9 /* Assets.xcassets */,
+				F5BC54D323DEE91300F24CA9 /* Main.storyboard */,
 				F5BC54DB23DEE91400F24CA9 /* LaunchScreen.storyboard */,
 				F5BC54DE23DEE91400F24CA9 /* Info.plist */,
 				F5BC54D623DEE91300F24CA9 /* Customer_Profile.xcdatamodeld */,
@@ -225,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -297,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48LDZRBPHR;
 				INFOPLIST_FILE = "Customer Profile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48LDZRBPHR;
 				INFOPLIST_FILE = "Customer Profile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
