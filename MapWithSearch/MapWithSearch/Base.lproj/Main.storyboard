@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapWithSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sy-WG-cX7" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="687" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4c-Xy-I2E">
+                                <rect key="frame" x="742" y="68" width="154" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yRw-JU-DWi"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dug-vd-BCx">
+                                <rect key="frame" x="912" y="70" width="70" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Zc3-7V-OcA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1C-Hr-nLx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dug-vd-BCx" firstAttribute="leading" secondItem="a4c-Xy-I2E" secondAttribute="trailing" constant="16" id="KRd-9e-tQi"/>
+                            <constraint firstItem="8sy-WG-cX7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NvJ-PL-gS7"/>
+                            <constraint firstAttribute="trailing" secondItem="8sy-WG-cX7" secondAttribute="trailing" constant="337" id="WIN-5p-nPI"/>
+                            <constraint firstItem="dug-vd-BCx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Z75-bo-htU"/>
+                            <constraint firstItem="8sy-WG-cX7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aUN-0M-8Xk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dug-vd-BCx" secondAttribute="bottom" constant="678" id="bGa-yd-OeP"/>
+                            <constraint firstItem="a4c-Xy-I2E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="hbF-ES-hDZ"/>
+                            <constraint firstItem="8sy-WG-cX7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iiA-Db-uq2"/>
+                            <constraint firstItem="a4c-Xy-I2E" firstAttribute="leading" secondItem="8sy-WG-cX7" secondAttribute="trailing" constant="55" id="lLA-WS-ZZL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dug-vd-BCx" secondAttribute="trailing" constant="42" id="uiv-u3-qyB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="8sy-WG-cX7" id="lUr-6N-7zc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954.49218749999989" y="52.34375"/>
+        </scene>
+    </scenes>
+</document>

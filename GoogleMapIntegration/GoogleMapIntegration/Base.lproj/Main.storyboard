@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,30 +15,90 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMapIntegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZI-Do-YuI" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="684" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GG0-ID-wfI">
+                                <rect key="frame" x="724" y="50" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="7Wn-4l-xMB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Location details" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-tH-6LD">
+                                <rect key="frame" x="724" y="110" width="280" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="location"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQt-Kh-ZvK">
+                                <rect key="frame" x="713" y="373" width="302" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellReuse" textLabel="zbf-s3-dSs" style="IBUITableViewCellStyleDefault" id="GEE-U2-b6i">
+                                        <rect key="frame" x="0.0" y="28" width="302" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GEE-U2-b6i" id="yOR-5F-z6i">
+                                            <rect key="frame" x="0.0" y="0.0" width="302" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zbf-s3-dSs">
+                                                    <rect key="frame" x="15" y="0.0" width="272" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9N-Jc-wT8">
+                                <rect key="frame" x="956" y="51" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hM-jR-bTi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QZI-Do-YuI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Wq-fx-9Ep"/>
-                            <constraint firstItem="QZI-Do-YuI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3US-A1-DDM"/>
+                            <constraint firstItem="j9N-Jc-wT8" firstAttribute="leading" secondItem="GG0-ID-wfI" secondAttribute="trailing" constant="13" id="B3m-V0-s01"/>
+                            <constraint firstItem="GG0-ID-wfI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="BaV-FA-9jj"/>
+                            <constraint firstItem="QZI-Do-YuI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bq3-4h-dpB"/>
                             <constraint firstItem="QZI-Do-YuI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gkm-Yy-Psf"/>
-                            <constraint firstItem="QZI-Do-YuI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mD8-RI-b3l"/>
+                            <constraint firstItem="QZI-Do-YuI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kn4-yt-kbt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9N-Jc-wT8" secondAttribute="trailing" constant="20" id="PFC-Eg-9lI"/>
+                            <constraint firstItem="j9N-Jc-wT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="PqW-gN-gvk"/>
+                            <constraint firstItem="GG0-ID-wfI" firstAttribute="leading" secondItem="QZI-Do-YuI" secondAttribute="trailing" constant="40" id="RCN-zW-fsg"/>
+                            <constraint firstItem="bpt-tH-6LD" firstAttribute="leading" secondItem="QZI-Do-YuI" secondAttribute="trailing" constant="40" id="ggm-Wm-GcN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bpt-tH-6LD" secondAttribute="bottom" constant="412" id="m3P-OW-a58"/>
+                            <constraint firstItem="bpt-tH-6LD" firstAttribute="top" secondItem="GG0-ID-wfI" secondAttribute="bottom" constant="30" id="m5h-VG-5Xa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpt-tH-6LD" secondAttribute="trailing" constant="20" id="nT9-p9-pQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZI-Do-YuI" secondAttribute="trailing" constant="340" id="pEY-36-Boh"/>
+                            <constraint firstItem="bpt-tH-6LD" firstAttribute="top" secondItem="j9N-Jc-wT8" secondAttribute="bottom" constant="29" id="rg4-DG-nnl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Map_View" destination="QZI-Do-YuI" id="zUw-Hy-nqs"/>
+                        <outlet property="addressDetails" destination="bpt-tH-6LD" id="PXh-pd-9iW"/>
+                        <outlet property="likelyTableview" destination="cQt-Kh-ZvK" id="cTS-kD-ctQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="127.28635682158921"/>
+            <point key="canvasLocation" x="-220.3125" y="1.5625"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapWithSearch/ViewController.swift"
+            timestampString = "603609671.246686"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MapWithSearch.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MapWithSearch.ViewController"
+                  moduleName = "MapWithSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumar/Desktop/Tasks/iOS-Tasks/MapWithSearch/MapWithSearch/ViewController.swift"
+                  timestampString = "602668383.39663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MapWithSearch.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MapWithSearch.ViewController"
+                  moduleName = "MapWithSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumar/Desktop/Tasks/iOS-Tasks/MapWithSearch/MapWithSearch/ViewController.swift"
+                  timestampString = "602668383.399048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MapWithSearch.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MapWithSearch.ViewController&gt;"
+                  moduleName = "MapWithSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumar/Desktop/Tasks/iOS-Tasks/MapWithSearch/MapWithSearch/ViewController.swift"
+                  timestampString = "602668383.401456"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MapWithSearch.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MapWithSearch.ViewController&gt;"
+                  moduleName = "MapWithSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumar/Desktop/Tasks/iOS-Tasks/MapWithSearch/MapWithSearch/ViewController.swift"
+                  timestampString = "602668383.4044549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MapWithSearch.ViewController.__deallocating_deinit"
+                  moduleName = "MapWithSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumar/Desktop/Tasks/iOS-Tasks/MapWithSearch/MapWithSearch/ViewController.swift"
+                  timestampString = "602668383.406496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
